@@ -1,0 +1,199 @@
+* {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  color: aliceblue;
+  scroll-behavior: smooth;
+}
+
+
+/* Main Container of Main page */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.second-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+/* Left Container of Main Page */
+.container-left {
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Right Container of Landing Page */
+.container-right {
+  display: flex;
+  flex: 50%;
+  justify-content: center;
+  align-items: center;
+}
+/* Main Image on Page */
+.main-right{
+  background: url(Photos/drink.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* Logo */
+.logo{
+  width: 50%;
+}
+
+/* Second Section */
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  flex: 50%;
+  justify-content: center;
+  align-items: center;
+  background: url(Photos/cheers.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.services-section{
+  background-color: rgba(0, 0, 0, 0.716);
+  padding: 2rem;
+}
+
+/* Services Text and Heading */
+.services-heading{
+font-size: 4rem;
+margin: 0 0 2rem 0;
+font-family: 'Roboto', sans-serif;
+font-weight: 400;
+}
+
+.services-text{
+font-size: 2rem;
+padding: .75rem 0 .75rem 0;
+font-family: 'Roboto', sans-serif;
+font-weight: 100;
+}
+
+/* Services IMG */
+.services-img{
+  width: 30%;
+}
+
+/* Logos/Socials Container */
+.logos-container{
+  margin: 1rem 0 0 0;
+}
+
+.fa-brands{
+  padding: 0 .5rem 0 .5rem;
+  font-size: 1.25rem;
+}
+
+.fa-facebook{
+  color: #3b5998;
+
+}
+.fa-whatsapp{
+  color: #25D366;
+}
+.fa-instagram{
+  background: linear-gradient(to right, #fcaf45, #e1306c, #5851db);
+  text-overflow: none;
+
+}
+.fa-twitter{
+  color: #1DA1F2;
+}
+
+/* Form START */
+
+form {
+  margin-top: 50px;
+  transition: all 4s ease-in-out;
+}
+
+.form-control {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact-section {
+    margin: 3rem 11rem 0 11rem;
+  }
+  .form-control {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-section {
+    margin: 0;
+  }
+  .form-control {
+    width: 400px;
+  }
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background: #0225bedf;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover {
+  background-color: #0225be79;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+/* FORM END */
+
+@media screen and (max-width: 700px) {
+  .logo{
+    width: 90%;
+  }
+  .second-container{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .services-section{
+    padding: 8rem 2rem 4rem 2rem;
+  }
+}

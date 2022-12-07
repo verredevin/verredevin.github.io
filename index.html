@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Website preview Google/Search -->
+    <meta
+      name="description"
+      content="TEST TEST TEST DESCRIPTION"
+      data-react-helmet="true"
+    />
+    <!-- Website Title -->
+    <meta name="title" content="Web Developer" data-react-helmet="true" />
+    <!-- Website Keywords -->
+    <meta
+      name="keywords"
+      content="Web Developer, San Antonio, HTML, CSS, JavaScript, Website, Website developer, Ricardo Soria"
+    />
+    <!-- Website Author -->
+    <meta name="author" content="Ricardo Soria" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="" />
+    <!-- Favicon Apple Devices -->
+    <link rel="apple-touch-icon" type="image/png" href="" />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/3af93953f7.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <title>Verre De Vin</title>
+  </head>
+  <body>
+    <section>
+      <div class="main-container">
+        <div class="container-left">
+          <img class="logo" src="Photos/logo.jpg" alt="Logo for Verre De Vin">
+        </div>
+        <div class="container-right main-right">
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="second-container">
+        <div class="contact-left">
+          <div class="services-section">
+            <H2 class="services-heading">Services</H2>
+          <p class="services-text">Bartending</p>
+          <p class="services-text">Serving</p>
+          <p class="services-text">Event Planning</p>
+          <!-- <img src="/Photos/cheers.jpg" alt="" class="services-img"> -->
+          <div class="logos-container">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          </div>
+        </div>
+        <div class="container-right">
+          <!-- Contact Form -->
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/xoqyddlb"
+            method="POST"
+          >
+            <input
+              type="text"
+              name="email"
+              placeholder="Name"
+              class="email form-control"
+            />
+            <br />
+            <input
+              type="tel"
+              name="subject"
+              placeholder="Phone Number"
+              class="subject form-control"
+            />
+            <br />
+
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="4"
+              class="message form-control"
+            ></textarea>
+            <br />
+
+            <div class="status"></div>
+            <!-- <button type="submit" class="submit form-control">Send</button> -->
+            <input
+              type="submit"
+              class="form-control submit"
+              value="SEND MESSAGE"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- JS Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
